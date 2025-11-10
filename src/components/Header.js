@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from 'react-router-dom'
 
 
 
 const Header = () => {
+  const Navigate = useNavigate()
   return (
     <div className='flex gap-5 justify-between border bg-blue-600 text-white'>
       <div>
@@ -13,8 +15,12 @@ const Header = () => {
 
         <Link to="/home">Home</Link>
         <Link to ="/About">About</Link>
+        <p onClick={() => Navigate('/Contact')}>Contact</p>
+        <a href='/' onClick={() => Navigate ('/Delivery')}>Delivery</a>
+
         
-        <p>Delivery</p>
+        
+        
       </div>
 
     </div>

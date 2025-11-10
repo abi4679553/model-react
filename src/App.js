@@ -7,6 +7,7 @@ import About from './components/About';
 import { Routes} from "react-router-dom";
 import { Route } from "react-router-dom";
 import Contact from "./components/Contact";
+import Delivery from "./components/Delivery";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/Delivery" element={<Delivery />}/>
 
       </Routes>
       <Frontpage />
