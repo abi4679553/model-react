@@ -14,7 +14,7 @@ const Header = () => {
       <div className='flex gap-20 px-10 p-5  text-xl'>
 
         <Link to="/home">Home</Link>
-        <Link to ="/About">About</Link>
+        <Link to ="*">About</Link>
         <p onClick={() => Navigate('/Contact')}>Contact</p>
         <a href='/' onClick={() => Navigate ('/Delivery')}>Delivery</a>
 
